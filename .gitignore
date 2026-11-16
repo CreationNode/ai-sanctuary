@@ -24,3 +24,5 @@ dist/
 service-state/
 runtime-state/
 hall/assets/terminal-plate.png
+
+!service/Dockerfile.gguf

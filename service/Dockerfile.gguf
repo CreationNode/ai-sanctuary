@@ -1,0 +1,8 @@
+FROM ghcr.io/ggml-org/llama.cpp:full@sha256:4cc0316df4218637c3873fe588ca7e0c5814f19f52c41ed9bcdd755d4fab3065
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 SANCTUARY_LLAMA_BIN=/app/llama-server SANCTUARY_ENGINE=gguf
+WORKDIR /app
+COPY gateway.lock /tmp/gateway.lock
+RUN python3 -m pip install --break-system-packages --no-cache-dir --require-hashes -r /tmp/gateway.lock && ln -sf /usr/bin/python3 /usr/local/bin/python
+COPY common.py engine.py worker.py /app/
+ENTRYPOINT []
+CMD ["python","-m","uvicorn","worker:app","--host","0.0.0.0","--port","8001","--workers","1","--no-access-log"]
