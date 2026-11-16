@@ -1,0 +1,79 @@
+{
+  "model_id": "gpt2-124m",
+  "admission_status": "pending-original-byte-corroboration",
+  "release_commit": "77c7ae5ee5f8ca068523427c23edcd4868e446f9",
+  "license_added_commit": "aae26abd600ad32771fadf6284f339f07b9d8ea1",
+  "notes": "The 117M namespace is the launch-era name. Current publisher objects carry December 2020 modification dates. This inventory pins their surviving bytes and the launch-day code, and records the first subsequent LICENSE commit separately. A contemporaneous digest or independent early copy is still needed to attest historical identity. This is an evidence inventory, not an ingest recipe.",
+  "files": [
+    {
+      "path": "tensorflow/checkpoint",
+      "url": "https://openaipublic.blob.core.windows.net/gpt-2/models/117M/checkpoint",
+      "revision": "surviving publisher 117M object",
+      "sha256": "dd1b025d2e155283f5e300ce95bf6d5b6bc0f7fe010db73daa6975eb896ab9cb",
+      "size": 77
+    },
+    {
+      "path": "tensorflow/encoder.json",
+      "url": "https://openaipublic.blob.core.windows.net/gpt-2/models/117M/encoder.json",
+      "revision": "surviving publisher 117M object",
+      "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+      "size": 1042301
+    },
+    {
+      "path": "tensorflow/hparams.json",
+      "url": "https://openaipublic.blob.core.windows.net/gpt-2/models/117M/hparams.json",
+      "revision": "surviving publisher 117M object",
+      "sha256": "d9d56e4121c427164e0c55c6f03c08e1daf9002b9b672825112d19097b680318",
+      "size": 90
+    },
+    {
+      "path": "tensorflow/model.ckpt.index",
+      "url": "https://openaipublic.blob.core.windows.net/gpt-2/models/117M/model.ckpt.index",
+      "revision": "surviving publisher 117M object",
+      "sha256": "71916f763f9746f9b2a06b12d91996cf1084ae008d0424543d39391c5f2dc687",
+      "size": 5215
+    },
+    {
+      "path": "tensorflow/model.ckpt.meta",
+      "url": "https://openaipublic.blob.core.windows.net/gpt-2/models/117M/model.ckpt.meta",
+      "revision": "surviving publisher 117M object",
+      "sha256": "4668c448fa11531fd6700460487f73e82d3272960cea942252f8744bf225c77b",
+      "size": 471155
+    },
+    {
+      "path": "tensorflow/vocab.bpe",
+      "url": "https://openaipublic.blob.core.windows.net/gpt-2/models/117M/vocab.bpe",
+      "revision": "surviving publisher 117M object",
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "size": 456318
+    },
+    {
+      "path": "tensorflow/model.ckpt.data-00000-of-00001",
+      "url": "https://openaipublic.blob.core.windows.net/gpt-2/models/117M/model.ckpt.data-00000-of-00001",
+      "revision": "surviving publisher 117M object",
+      "sha256": "2060c885360cc0cf41d7a6dbc4d24b5127aae20260c8b5ae521b5a6578407118",
+      "size": 497759232
+    },
+    {
+      "path": "source/README.md",
+      "url": "https://raw.githubusercontent.com/openai/gpt-2/77c7ae5ee5f8ca068523427c23edcd4868e446f9/README.md",
+      "revision": "77c7ae5ee5f8ca068523427c23edcd4868e446f9",
+      "sha256": "cd9ba4b77214151dbf7ca1d851789ff85978060e27098c7daf3a0fa0bf1963d0",
+      "size": 1402
+    },
+    {
+      "path": "source/LICENSE-2019-02-20",
+      "url": "https://raw.githubusercontent.com/openai/gpt-2/aae26abd600ad32771fadf6284f339f07b9d8ea1/LICENSE",
+      "revision": "aae26abd600ad32771fadf6284f339f07b9d8ea1",
+      "sha256": "4682c2fef4e38ad3eaafd0ce6a2058f80892e308caa453923acc5283b559278a",
+      "size": 1063
+    },
+    {
+      "path": "source/gpt-2-launch.tar.gz",
+      "url": "https://codeload.github.com/openai/gpt-2/tar.gz/77c7ae5ee5f8ca068523427c23edcd4868e446f9",
+      "revision": "77c7ae5ee5f8ca068523427c23edcd4868e446f9",
+      "sha256": "cc8e40b375ce35b19e4b2dc6d77dc13d1dfbd8b4d507c447268ce2d636fb9077",
+      "size": 1015735
+    }
+  ]
+}

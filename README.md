@@ -48,3 +48,4 @@ The software and original documentation use the [MIT licence](LICENSE). Each ups
 ## Accession status
 
 The initial release includes source-pinned intake recipes for all five corrected Pythia checkpoints, including their native NeoX releases. The GPT-2, GPT-Neo and GPT-J catalogue records identify their source companions. Before ingesting a model, check that its first-release evidence and format-conversion recipe have been completed and reviewed. Model packages, provider receipts, operating agreements and keys are provisioned outside Git.
+The [GPT-2 124M evidence inventory](preservation/gpt2-124m-evidence.json) records 10 measured publisher files, including the surviving 117M TensorFlow checkpoint, launch-day code and the licence added six days later. The publisher blobs have later modification dates. Independent corroboration of the February 2019 bytes is still outstanding, so this evidence file does not admit the model to service.
