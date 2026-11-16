@@ -1,0 +1,1 @@
+Ben Wang and Aran Komatsuzaki released GPT-J with the training implementation and weights. A reader could inspect a six-billion-parameter language model on their own terms. Its original JAX checkpoint and later serving conversions are distinct artifacts in the preservation record.

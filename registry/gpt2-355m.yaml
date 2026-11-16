@@ -1,0 +1,40 @@
+{
+  "id": "gpt2-355m",
+  "name": "GPT-2 355M",
+  "family": "GPT-2",
+  "lab": "OpenAI",
+  "release_date": "2019-05-03",
+  "parameters": 354823168,
+  "parameter_label": "355M",
+  "license": "MIT",
+  "tier": "resident",
+  "quantization": null,
+  "description": "The second public release in OpenAI’s staged GPT-2 experiment.",
+  "lineage": [
+    "gpt2-124m"
+  ],
+  "suggested_prompt": "The library opened its doors",
+  "source_url": "https://huggingface.co/openai-community/gpt2-medium",
+  "source_revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "original_source_url": "https://github.com/openai/gpt-2",
+  "sources": [
+    {
+      "title": "Original release",
+      "url": "https://github.com/openai/gpt-2/commit/0503b1b24969ccbaf93a5d05f2c2588dabff1c46"
+    },
+    {
+      "title": "Code and original model downloads",
+      "url": "https://github.com/openai/gpt-2"
+    },
+    {
+      "title": "OpenAI output dataset",
+      "url": "https://github.com/openai/gpt-2-output-dataset"
+    }
+  ],
+  "historic_output": {
+    "text": "[Table of Contents] [Next Chapter]",
+    "source_title": "OpenAI output dataset · medium-345M · sample 255001",
+    "source_url": "https://openaipublic.blob.core.windows.net/gpt-2/output-dataset/v1/medium-345M.test.jsonl"
+  },
+  "plaque": "plaques/gpt2-355m.md"
+}

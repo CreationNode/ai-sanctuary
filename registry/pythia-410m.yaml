@@ -1,0 +1,32 @@
+{
+  "id": "pythia-410m",
+  "name": "Pythia 410M",
+  "family": "Pythia",
+  "lab": "EleutherAI",
+  "release_date": "2023-04-03",
+  "parameters": 410000000,
+  "parameter_label": "410M",
+  "license": "Apache-2.0",
+  "tier": "resident",
+  "quantization": null,
+  "description": "A twenty-four-layer model with an unusually detailed training record.",
+  "lineage": [
+    "pythia-160m"
+  ],
+  "suggested_prompt": "The library opened its doors",
+  "source_url": "https://huggingface.co/EleutherAI/pythia-410m",
+  "source_revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+  "original_source_url": "https://huggingface.co/EleutherAI/pythia-410m",
+  "sources": [
+    {
+      "title": "The Pythia suite and release history",
+      "url": "https://github.com/EleutherAI/pythia"
+    },
+    {
+      "title": "Pinned model snapshot",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/tree/9879c9b5f8bea9051dcb0e68dff21493d67e9d4f"
+    }
+  ],
+  "historic_output": null,
+  "plaque": "plaques/pythia-410m.md"
+}

@@ -1,0 +1,6 @@
+The visitor hall terminal illustration was generated with the built-in OpenAI image generation tool for this site. It is an editorial image and has no historical provenance claim.
+
+Asset: hall/assets/terminal.jpg
+
+Generation prompt:
+Wide landscape editorial illustration for a museum of computing. A carefully detailed 1970s cathode ray tube computer terminal with a heavy rounded cream housing and separate rows of physical keyboard keys, shown in three-quarter view facing left, full object visible. One large faded burnt orange solid disc behind the upper right of the machine. Render as beautifully intricate vintage black and ivory copperplate engraving, cross-hatched shadows and coarse old scientific catalogue halftone, photographed on uniform warm off-white uncoated paper, quiet restrained contrast, a few registration marks and fine drafting lines. Wide 3:2 composition, terminal and keyboard fill the central 75%, ample surrounding clean paper, elegant bookplate print, no lettering, no display text, no labels, no border, no watermark. This is a contemporary editorial illustration, not a photographic claim about a historical artifact.

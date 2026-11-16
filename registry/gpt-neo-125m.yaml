@@ -1,0 +1,32 @@
+{
+  "id": "gpt-neo-125m",
+  "name": "GPT-Neo 125M",
+  "family": "GPT-Neo",
+  "lab": "EleutherAI",
+  "release_date": "2021-04-06",
+  "parameters": 125000000,
+  "parameter_label": "125M",
+  "license": "MIT",
+  "tier": "resident",
+  "quantization": null,
+  "description": "A small checkpoint trained on the Pile and released for local experimentation.",
+  "lineage": [
+    "gpt-neo-1.3b"
+  ],
+  "suggested_prompt": "At the edge of the map",
+  "source_url": "https://huggingface.co/EleutherAI/gpt-neo-125m",
+  "source_revision": "21def0189f5705e2521767faed922f1f15e7d7db",
+  "original_source_url": "https://github.com/EleutherAI/gpt-neo",
+  "sources": [
+    {
+      "title": "Original release",
+      "url": "https://github.com/EleutherAI/gpt-neo"
+    },
+    {
+      "title": "Pinned upstream snapshot",
+      "url": "https://huggingface.co/EleutherAI/gpt-neo-125m/tree/21def0189f5705e2521767faed922f1f15e7d7db"
+    }
+  ],
+  "historic_output": null,
+  "plaque": "plaques/gpt-neo-125m.md"
+}

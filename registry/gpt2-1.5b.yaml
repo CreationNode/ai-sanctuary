@@ -1,0 +1,40 @@
+{
+  "id": "gpt2-1.5b",
+  "name": "GPT-2 1.5B",
+  "family": "GPT-2",
+  "lab": "OpenAI",
+  "release_date": "2019-11-05",
+  "parameters": 1557611200,
+  "parameter_label": "1.5B",
+  "license": "MIT",
+  "tier": "resident",
+  "quantization": null,
+  "description": "The final and largest public release of the original GPT-2 series.",
+  "lineage": [
+    "gpt2-774m"
+  ],
+  "suggested_prompt": "The library opened its doors",
+  "source_url": "https://huggingface.co/openai-community/gpt2-xl",
+  "source_revision": "15ea56dee5df4983c59b2538573817e1667135e2",
+  "original_source_url": "https://github.com/openai/gpt-2",
+  "sources": [
+    {
+      "title": "Original release",
+      "url": "https://openai.com/index/gpt-2-1-5b-release/"
+    },
+    {
+      "title": "Code and original model downloads",
+      "url": "https://github.com/openai/gpt-2"
+    },
+    {
+      "title": "OpenAI output dataset",
+      "url": "https://github.com/openai/gpt-2-output-dataset"
+    }
+  ],
+  "historic_output": {
+    "text": "This is a neat little plugin to give more options to the webp daemon.",
+    "source_title": "OpenAI output dataset · xl-1542M · sample 255001",
+    "source_url": "https://openaipublic.blob.core.windows.net/gpt-2/output-dataset/v1/xl-1542M.test.jsonl"
+  },
+  "plaque": "plaques/gpt2-1.5b.md"
+}

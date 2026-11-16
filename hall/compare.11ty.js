@@ -1,0 +1,2 @@
+import {shell,form} from './layout.js';
+export default ({models})=>shell('Compare models','/',`<div class="wrap inside"><a class="back" href="/#collection">← Collection index</a><div class="page-top"><div class="eyebrow ruled">Reading room</div><h1>Same prompt, every model.</h1><p class="lead">Read how different checkpoints continue the same opening. Each available model uses one request from your quota.</p></div>${form(models[0],true)}</div>`);

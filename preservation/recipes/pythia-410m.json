@@ -1,0 +1,592 @@
+{
+  "model_id": "pythia-410m",
+  "serving_revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+  "serving_engine": "transformers",
+  "golden_prompt": "At the edge of the reading room,",
+  "gguf": {
+    "image": "ghcr.io/ggml-org/llama.cpp:full@sha256:4cc0316df4218637c3873fe588ca7e0c5814f19f52c41ed9bcdd755d4fab3065",
+    "steps": [
+      [
+        "python3",
+        "/app/convert_hf_to_gguf.py",
+        "/input",
+        "--outtype",
+        "f16",
+        "--outfile",
+        "/output/model.gguf"
+      ]
+    ]
+  },
+  "release_evidence": "Corrected April 2023 Pythia v1. The completed publisher HF release batch is pinned at 33fc2fdda3ea75631397cc28cec556f0ef401ae7. The separately published native NeoX checkpoint inventory is pinned at c02df18df4454a7b0c4eca6245d756ddd937bdd8. LFS object identities come from the upstream file inventories. Small files were hashed from the pinned URLs. Verify equivalence to the selected serving companion during intake.",
+  "redistribution_basis": "The publisher declares Apache-2.0 in its model card. Retain upstream notices. Review the saved software, dependencies and container notices before third-party distribution.",
+  "original_files": [
+    {
+      "path": "publisher-hf/.gitattributes",
+      "role": "config",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/resolve/33fc2fdda3ea75631397cc28cec556f0ef401ae7/.gitattributes",
+      "revision": "33fc2fdda3ea75631397cc28cec556f0ef401ae7",
+      "sha256": "db7c0371f46f0840b8f25794c1e3321c9b5820a8cb6ba9694a46fc64b8fae5a6",
+      "size": 1477
+    },
+    {
+      "path": "publisher-hf/README.md",
+      "role": "card",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/resolve/33fc2fdda3ea75631397cc28cec556f0ef401ae7/README.md",
+      "revision": "33fc2fdda3ea75631397cc28cec556f0ef401ae7",
+      "sha256": "87c7ffcae300eee4b7d0b289c9122bf9cfb4dd5c668f4923d8675a93bcba9a87",
+      "size": 13438
+    },
+    {
+      "path": "publisher-hf/config.json",
+      "role": "config",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/resolve/33fc2fdda3ea75631397cc28cec556f0ef401ae7/config.json",
+      "revision": "33fc2fdda3ea75631397cc28cec556f0ef401ae7",
+      "sha256": "d4c11e84a59c8af4d88446bba53b718f7aef740daa070ded08fd6a9a3aca4fc6",
+      "size": 570
+    },
+    {
+      "path": "publisher-hf/pytorch_model.bin",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/resolve/33fc2fdda3ea75631397cc28cec556f0ef401ae7/pytorch_model.bin",
+      "revision": "33fc2fdda3ea75631397cc28cec556f0ef401ae7",
+      "sha256": "786bd9bcde112a970e1614807cbb23999482de65fc05c3e0795198719b5e1543",
+      "size": 911449213
+    },
+    {
+      "path": "publisher-hf/special_tokens_map.json",
+      "role": "tokenizer",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/resolve/33fc2fdda3ea75631397cc28cec556f0ef401ae7/special_tokens_map.json",
+      "revision": "33fc2fdda3ea75631397cc28cec556f0ef401ae7",
+      "sha256": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+      "size": 99
+    },
+    {
+      "path": "publisher-hf/tokenizer.json",
+      "role": "tokenizer",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/resolve/33fc2fdda3ea75631397cc28cec556f0ef401ae7/tokenizer.json",
+      "revision": "33fc2fdda3ea75631397cc28cec556f0ef401ae7",
+      "sha256": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+      "size": 2113710
+    },
+    {
+      "path": "publisher-hf/tokenizer_config.json",
+      "role": "tokenizer",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m/resolve/33fc2fdda3ea75631397cc28cec556f0ef401ae7/tokenizer_config.json",
+      "revision": "33fc2fdda3ea75631397cc28cec556f0ef401ae7",
+      "sha256": "70e38394e494931c6f773ba41e19460dd4436526b852207367f04341b4066d3f",
+      "size": 396
+    },
+    {
+      "path": "publisher-neox/.gitattributes",
+      "role": "config",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/.gitattributes",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "db7c0371f46f0840b8f25794c1e3321c9b5820a8cb6ba9694a46fc64b8fae5a6",
+      "size": 1477
+    },
+    {
+      "path": "publisher-neox/410M.yml",
+      "role": "config",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/410M.yml",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "e2a27d15b41424d9f485c15a6d18d6e339798f89143ace6e7f58bda586d83b3b",
+      "size": 2147
+    },
+    {
+      "path": "publisher-neox/layer_00-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_00-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "24ef802bb870eab669597ab61458224164d1cf349cb5825094e3110ca0b9a0f8",
+      "size": 103023536
+    },
+    {
+      "path": "publisher-neox/layer_02-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_02-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "ff191d2600f69f1116e8a58462257540f33d0a1fe2c173ae0830988a25d01ee9",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_03-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_03-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "8716b29c62310d09b11eb86528cd3895e09aa537d610be164d272a0aa881aa4e",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_04-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_04-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "6def460ea64c20428ffed37191bcfd855e04d814bc34be8e45a7b6611d990a6a",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_05-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_05-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "f374c624843dd8c99868a37cee7f1c9459e50c700eda983eebb9ede66bf75108",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_06-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_06-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "b0237e3ac1eedbfa762c9a5db4364cf237a8140d378a051f3d9f113f3bab4e55",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_07-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_07-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "38cb9d25fb1d49ed8e8a581816eb37582d2c49919babe3ac5b0ac88ff7298fe3",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_08-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_08-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "2f4d4d3b4bae9a7e116e32d9128103784429b3cdcebc8c73be113ef9495d3a51",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_09-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_09-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "03a061ed97b2b68f7589f0b1350dfb6ef2b72a8e282446d558306fc9b0d910af",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_10-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_10-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "46cad63600ac268a2234ba130d3be5b251bcb077339457bc260062042483c846",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_11-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_11-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "7b76a6ce954d0963e461d32750a4ed555b36f18460e2a74d480f3655a7f179af",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_12-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_12-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "b70d854073bb1bd65c0be4876191d2937d7dd118991a6e50aceba6add9fe3e3d",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_13-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_13-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "5759e16778b62cdcd7c2cfd2aff63eb71ec58df256a48709709223c31825618d",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_14-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_14-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "2765652722e4dc85688fff5860cb416ed217ef4445efd5f9f46675b81179f304",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_15-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_15-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "554c899cce9e8f75d8f3e55db532e832f9da3c84e5fc47b6a7cde8448f92b4e8",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_16-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_16-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "fa974280dde50a6891f8ec8c2ce7b16d169749d0c1bd9173e4647e5391648dff",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_17-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_17-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "375eb4ff1b206738ea6da1b6fcf2a941e7a54886a8b65113347e128713790fe9",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_18-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_18-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "f0054cb1efe6119c9cc1af233d20378deb3dad1c8d88aa17313819812020a245",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_19-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_19-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "bc063ac70ad6e60f71e5abf0d85b914472b3fa4b3f99aeb4cc9fb1799508ea1b",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_20-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_20-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "e75719ad02226b0644605a946ecb6e9fa61995dc01f7c3c774344f76dc75ce93",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_21-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_21-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "2ecf3cc044baba86ac5bc3cd09be48665f2487c7988c48ff50be0dcf5c2c33be",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_22-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_22-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "d15f6f3a4851440759b948df46c8be183c6e89011056acc48b9a232770dcff80",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_23-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_23-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "fa23baf9241a6cc236a280b89dc811b21656e7396fd2302be80f2700ebf39ffa",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_24-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_24-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "f37531499bb9be40cca00aef5ef148acdeccf60e197fbdb2828b1c802bd71696",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_25-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_25-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "fb06078d0b897789283fc7b501f7f1ba528c31dec5405477dbb97724e0fe6caa",
+      "size": 25196951
+    },
+    {
+      "path": "publisher-neox/layer_27-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_27-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "231c200beba2b63d7fdab96f98a645b977a1571a6b0af48e6bc933072da8bb9a",
+      "size": 5315
+    },
+    {
+      "path": "publisher-neox/layer_28-model_00-model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/layer_28-model_00-model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "8d8ca1fb758efbdb3efae7e53df15c88369afaddf518c1aeb46e9f38bb1f36c5",
+      "size": 103023536
+    },
+    {
+      "path": "publisher-neox/mp_rank_00_model_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/mp_rank_00_model_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "fe0e62c0c96c32f9866b92ea2f2c503afa2bb73f3f34cffe238046e9e290c717",
+      "size": 16563
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "456acdeec956caaa6d1eded10666fac438d0b224c17713f77c08857ef315f2b6",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_10_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_10_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "999533ccd868c608779954772fa7d4933c50702282022166aa1e5f57328e973e",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_11_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_11_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "21a7bbe2859e4b5a2cbdfb9bfd370a75d6d831d13755988eefd936ee18b8e3f6",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_12_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_12_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "0c6a1ed1c76a30b73c7652a2b632bed601da17f82fd1252da96770898646b3ba",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_13_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_13_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "910b3437d7b548d5a11b443ed622ca8548fbbcd803dd5cba16e3a56e006daa7a",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_14_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_14_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "d4cab62576acc6218b7bdcd45922f0cf71897b6392731a262850bd6e765664fd",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_15_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_15_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "d3374c52233076d3b0bbed9b2d99ca2e3cc47eb623c8af0797f3333eb02dfa7b",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_16_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_16_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "f25b826f07830441224abd7aa4259102bc831794a73217ad4412c82a3dac80af",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_17_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_17_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "9bd0093124727449be8769eaf9a09d111311a7890ffd5a0e7d5bd95330db7efd",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_18_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_18_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "088f1c5a172ca05001d247ea10868cfdd620fdd9006ab9bbd4edaf0cde6b1c37",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_19_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_19_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "b968e386ad7d040ccefdc8db854fd5ca66331d66e4ff73f8d3ffe6838b910289",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "7527f8d7d614aaf0b95d65149a388c829af618311f302866569c5ed7f01e67cb",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_20_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_20_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "f7306d927ecb67fced9503369614e221f30a7ad4ae19b6a814a25db7188ee077",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_21_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_21_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "977176b3668c23541ecb7370d6966423a0764accd7e595c8f6c0ba77421e4f50",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_22_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_22_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "ca19044e6c7d313868ef97c53e41801a72293f9dbcb7ff99916ed9f394aae063",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_23_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_23_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "ab6642711b97e48aeebde7d53f72974bf625e07e2cdec345914786765ca5cd6e",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_24_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_24_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "54b820836cae41053a00ca463f05e3d3d20c617ccacba4107d13edb4a95d70ac",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_25_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_25_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "bef73d2b1f75350d4af2e123975681894241d895d69296ffeba4938489db7073",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_26_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_26_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "d0e50668c6a4db27af874a17085fd4e39da5c6ce83d2010921ed6c8b1c7b9ae9",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_27_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_27_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "6b75ec9e3950d17a3c004945eb640691365bd4f8fad7d52b2548155ffad2cbe3",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_28_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_28_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "51362f03a0a101b859f0bbd55bb4cf14367488c0499bb3694965a80e6acdc6a0",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_29_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_29_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "1a1778abed6e8aecfbca8c1e1d88b3d9e289efb0b89d60ed55f5087dda9ccede",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_2_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_2_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "d2b79553ee41ec1bd6df3788897cf9d909ad53c4134a6e1506870d2bf2ca05ee",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_30_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_30_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "826a6909b0494e170c3dfe5912fb70129eb1c6dcfccbb98784cae979f7b2f21f",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_31_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_31_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "c2fc134a32c398b93206657835c28354d09199289dec604d3e572ecbfbd0d816",
+      "size": 152020695
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_3_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_3_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "b90f87541bd34b874e3f94312e0414fb9dbdd4c5d30a162875e195f293225807",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_4_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_4_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "c26bb3b0350bcf07636e3152c5dea2d4f15d0f01f5d082615e106079d75d6922",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_5_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_5_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "7a67388d3c4a8c992fd70266255aabaa656e6df545ab92aee43ea40c94028eea",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_6_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_6_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "b42edf3ae9558ad5a415c3dc6c79b6824e6048aff1eff921dc0be555820ccf1c",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_7_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_7_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "fc755ef84650d8b14e126f37659a2065c5e36f1193d9b33dca5e5891103343fe",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_8_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_8_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "e886c9af914a072c0dc832a9b0da899216e0e119642ac4dea60a0baad5f488b1",
+      "size": 152020687
+    },
+    {
+      "path": "publisher-neox/zero_pp_rank_9_mp_rank_00_optim_states.pt",
+      "role": "weights",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-410m-v1/resolve/c02df18df4454a7b0c4eca6245d756ddd937bdd8/zero_pp_rank_9_mp_rank_00_optim_states.pt",
+      "revision": "c02df18df4454a7b0c4eca6245d756ddd937bdd8",
+      "sha256": "eaddd4d6a1af03c081078a17d637f8073b1bcb47095093605c3f7d8235c8ded4",
+      "size": 152020687
+    },
+    {
+      "role": "code",
+      "path": "gpt-neox-v1.0.tar.gz",
+      "url": "https://codeload.github.com/EleutherAI/gpt-neox/tar.gz/71df4d5017f9f4919566a11454fe3a507ffdc632",
+      "revision": "71df4d5017f9f4919566a11454fe3a507ffdc632",
+      "sha256": "769d3db7e51b826b30adcf9eabe39d9189cb08be6c7f74aab57ad9bfc9c5aaac",
+      "size": 194247
+    },
+    {
+      "role": "license",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/EleutherAI/gpt-neox/71df4d5017f9f4919566a11454fe3a507ffdc632/LICENSE",
+      "revision": "71df4d5017f9f4919566a11454fe3a507ffdc632",
+      "sha256": "1ac57be39b6d56b963dd1b82f212734acccc3bb3fcc15edb2e4ee6a26227efac",
+      "size": 25785
+    }
+  ]
+}

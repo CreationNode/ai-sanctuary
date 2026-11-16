@@ -1,0 +1,30 @@
+{
+  "id": "pythia-70m",
+  "name": "Pythia 70M",
+  "family": "Pythia",
+  "lab": "EleutherAI",
+  "release_date": "2023-04-03",
+  "parameters": 70000000,
+  "parameter_label": "70M",
+  "license": "Apache-2.0",
+  "tier": "resident",
+  "quantization": null,
+  "description": "Six layers in a suite built to study how language models learn.",
+  "lineage": [],
+  "suggested_prompt": "The library opened its doors",
+  "source_url": "https://huggingface.co/EleutherAI/pythia-70m",
+  "source_revision": "a39f36b100fe8a5377810d56c3f4789b9c53ac42",
+  "original_source_url": "https://huggingface.co/EleutherAI/pythia-70m",
+  "sources": [
+    {
+      "title": "The Pythia suite and release history",
+      "url": "https://github.com/EleutherAI/pythia"
+    },
+    {
+      "title": "Pinned model snapshot",
+      "url": "https://huggingface.co/EleutherAI/pythia-70m/tree/a39f36b100fe8a5377810d56c3f4789b9c53ac42"
+    }
+  ],
+  "historic_output": null,
+  "plaque": "plaques/pythia-70m.md"
+}

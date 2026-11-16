@@ -1,0 +1,5 @@
+# Install on the independent archive host. All times are UTC on a UTC host.
+# The final optional argument is the custodian's local alert relay (reads JSON on stdin).
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+15 2 1 * * sanctuary /usr/bin/python3 /opt/ai-sanctuary/preservation/schedule.py audit --archive /srv/sanctuary/packages --inventory /etc/sanctuary/custody.json --mirrors /etc/sanctuary/mirrors.json --alert-command /etc/sanctuary/notify
+15 2 * * 0 sanctuary /usr/bin/python3 /opt/ai-sanctuary/preservation/schedule.py golden --archive /srv/sanctuary/packages --inventory /etc/sanctuary/custody.json --alert-command /etc/sanctuary/notify

@@ -1,0 +1,17 @@
+{
+  "name": "ai-sanctuary",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy && node build-preview.mjs",
+    "serve": "eleventy --serve",
+    "preview": "node preview.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.2",
+    "@fontsource/baskervville": "5.3.0",
+    "@fontsource/dm-sans": "5.3.0",
+    "markdown-it": "14.3.3"
+  }
+}

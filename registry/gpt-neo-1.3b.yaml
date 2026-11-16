@@ -1,0 +1,30 @@
+{
+  "id": "gpt-neo-1.3b",
+  "name": "GPT-Neo 1.3B",
+  "family": "GPT-Neo",
+  "lab": "EleutherAI",
+  "release_date": "2021-03-21",
+  "parameters": 1300000000,
+  "parameter_label": "1.3B",
+  "license": "MIT",
+  "tier": "resident",
+  "quantization": null,
+  "description": "An early billion-parameter release from a volunteer research collective.",
+  "lineage": [],
+  "suggested_prompt": "At the edge of the map",
+  "source_url": "https://huggingface.co/EleutherAI/gpt-neo-1.3B",
+  "source_revision": "dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8",
+  "original_source_url": "https://github.com/EleutherAI/gpt-neo",
+  "sources": [
+    {
+      "title": "Original release",
+      "url": "https://github.com/EleutherAI/gpt-neo"
+    },
+    {
+      "title": "Pinned upstream snapshot",
+      "url": "https://huggingface.co/EleutherAI/gpt-neo-1.3B/tree/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8"
+    }
+  ],
+  "historic_output": null,
+  "plaque": "plaques/gpt-neo-1.3b.md"
+}

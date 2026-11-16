@@ -1,0 +1,1 @@
+At roughly the scale of the smallest GPT-2, this release lets a visitor try an independently trained transformer on the same opening line. Its Hugging Face history records the model and tokenizer upload on 6 April 2021. That is the date used for this catalogue entry.

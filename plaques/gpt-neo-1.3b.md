@@ -1,0 +1,1 @@
+EleutherAI published a GPT-style checkpoint alongside code that described how to train one. The project’s March release notes point to the original downloads. Its later Transformers distribution gives the same family a second point of entry.

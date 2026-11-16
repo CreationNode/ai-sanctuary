@@ -1,0 +1,40 @@
+{
+  "id": "gpt2-774m",
+  "name": "GPT-2 774M",
+  "family": "GPT-2",
+  "lab": "OpenAI",
+  "release_date": "2019-08-20",
+  "parameters": 774030080,
+  "parameter_label": "774M",
+  "license": "MIT",
+  "tier": "resident",
+  "quantization": null,
+  "description": "The August checkpoint in a gradual opening of the GPT-2 family.",
+  "lineage": [
+    "gpt2-355m"
+  ],
+  "suggested_prompt": "The library opened its doors",
+  "source_url": "https://huggingface.co/openai-community/gpt2-large",
+  "source_revision": "32b71b12589c2f8d625668d2335a01cac3249519",
+  "original_source_url": "https://github.com/openai/gpt-2",
+  "sources": [
+    {
+      "title": "Original release",
+      "url": "https://openai.com/index/gpt-2-6-month-follow-up/"
+    },
+    {
+      "title": "Code and original model downloads",
+      "url": "https://github.com/openai/gpt-2"
+    },
+    {
+      "title": "OpenAI output dataset",
+      "url": "https://github.com/openai/gpt-2-output-dataset"
+    }
+  ],
+  "historic_output": {
+    "text": "Good news for The Logan Society members",
+    "source_title": "OpenAI output dataset · large-762M · sample 255001",
+    "source_url": "https://openaipublic.blob.core.windows.net/gpt-2/output-dataset/v1/large-762M.test.jsonl"
+  },
+  "plaque": "plaques/gpt2-774m.md"
+}

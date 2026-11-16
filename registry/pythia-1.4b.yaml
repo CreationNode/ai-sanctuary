@@ -1,0 +1,32 @@
+{
+  "id": "pythia-1.4b",
+  "name": "Pythia 1.4B",
+  "family": "Pythia",
+  "lab": "EleutherAI",
+  "release_date": "2023-04-03",
+  "parameters": 1400000000,
+  "parameter_label": "1.4B",
+  "license": "Apache-2.0",
+  "tier": "resident",
+  "quantization": null,
+  "description": "A wider twenty-four-layer member of the controlled Pythia series.",
+  "lineage": [
+    "pythia-1b"
+  ],
+  "suggested_prompt": "The library opened its doors",
+  "source_url": "https://huggingface.co/EleutherAI/pythia-1.4b",
+  "source_revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+  "original_source_url": "https://huggingface.co/EleutherAI/pythia-1.4b",
+  "sources": [
+    {
+      "title": "The Pythia suite and release history",
+      "url": "https://github.com/EleutherAI/pythia"
+    },
+    {
+      "title": "Pinned model snapshot",
+      "url": "https://huggingface.co/EleutherAI/pythia-1.4b/tree/fedc38a16eea3bd36a96b906d78d11d2ce18ed79"
+    }
+  ],
+  "historic_output": null,
+  "plaque": "plaques/pythia-1.4b.md"
+}

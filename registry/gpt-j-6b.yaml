@@ -1,0 +1,37 @@
+{
+  "id": "gpt-j-6b",
+  "name": "GPT-J 6B",
+  "family": "GPT-J",
+  "lab": "EleutherAI",
+  "release_date": "2021-06-04",
+  "parameters": 6050000000,
+  "parameter_label": "6B",
+  "license": "Apache-2.0",
+  "tier": "warm",
+  "quantization": null,
+  "description": "A six-billion-parameter JAX model that brought a larger open checkpoint into reach.",
+  "lineage": [
+    "gpt-neo-1.3b"
+  ],
+  "suggested_prompt": "At the edge of the map",
+  "source_url": "https://huggingface.co/EleutherAI/gpt-j-6b",
+  "source_revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+  "original_source_url": "https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/",
+  "sources": [
+    {
+      "title": "Original release",
+      "url": "https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/"
+    },
+    {
+      "title": "Pinned upstream snapshot",
+      "url": "https://huggingface.co/EleutherAI/gpt-j-6b/tree/47e169305d2e8376be1d31e765533382721b2cc1"
+    }
+  ],
+  "historic_output": {
+    "source_title": "Aran Komatsuzaki, GPT-J release examples · 4 June 2021",
+    "text": "2. Geese produce a lot of noise!",
+    "source_url": "https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/"
+  },
+  "plaque": "plaques/gpt-j-6b.md",
+  "serving_note": "Warm Transformers checkpoint. A quantized GPT-J conversion needs validation on the chosen runtime."
+}

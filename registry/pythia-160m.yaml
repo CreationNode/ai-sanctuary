@@ -1,0 +1,32 @@
+{
+  "id": "pythia-160m",
+  "name": "Pythia 160M",
+  "family": "Pythia",
+  "lab": "EleutherAI",
+  "release_date": "2023-04-03",
+  "parameters": 160000000,
+  "parameter_label": "160M",
+  "license": "Apache-2.0",
+  "tier": "resident",
+  "quantization": null,
+  "description": "A twelve-layer checkpoint trained on the same text as its siblings.",
+  "lineage": [
+    "pythia-70m"
+  ],
+  "suggested_prompt": "The library opened its doors",
+  "source_url": "https://huggingface.co/EleutherAI/pythia-160m",
+  "source_revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+  "original_source_url": "https://huggingface.co/EleutherAI/pythia-160m",
+  "sources": [
+    {
+      "title": "The Pythia suite and release history",
+      "url": "https://github.com/EleutherAI/pythia"
+    },
+    {
+      "title": "Pinned model snapshot",
+      "url": "https://huggingface.co/EleutherAI/pythia-160m/tree/50f5173d932e8e61f858120bcb800b97af589f46"
+    }
+  ],
+  "historic_output": null,
+  "plaque": "plaques/pythia-160m.md"
+}

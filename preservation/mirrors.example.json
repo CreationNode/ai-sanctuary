@@ -1,0 +1,22 @@
+{
+  "mirrors": [
+    {
+      "provider": "replace-primary-provider",
+      "country": "DE",
+      "remote": "primary:sanctuary/releases",
+      "location": "s3://replace-primary/releases"
+    },
+    {
+      "provider": "replace-secondary-provider",
+      "country": "NL",
+      "remote": "secondary:sanctuary/releases",
+      "location": "s3://replace-secondary/releases"
+    },
+    {
+      "provider": "replace-public-archive",
+      "country": "US",
+      "remote": "public:replace-public-item/releases",
+      "location": "https://archive.org/download/replace-public-item/releases"
+    }
+  ]
+}

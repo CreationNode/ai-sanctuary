@@ -1,0 +1,1 @@
+OpenAI made the largest GPT-2 weights public in November 2019. The release completed a nine-month sequence in which model size had determined who could inspect a checkpoint and run their own continuations.

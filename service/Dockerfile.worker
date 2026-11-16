@@ -1,0 +1,7 @@
+FROM python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 HF_HUB_OFFLINE=1 TOKENIZERS_PARALLELISM=false
+WORKDIR /app
+COPY worker.lock /tmp/worker.lock
+RUN python -m pip install --no-cache-dir --require-hashes -r /tmp/worker.lock
+COPY common.py engine.py worker.py /app/
+CMD ["uvicorn","worker:app","--host","0.0.0.0","--port","8001","--workers","1","--no-access-log"]
